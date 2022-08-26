@@ -38,7 +38,7 @@ margin: 0;
 padding: 0;
 }
 .container {
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
