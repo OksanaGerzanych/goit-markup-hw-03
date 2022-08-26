@@ -15,6 +15,9 @@
   --second-btn-bgr: #ffffff;
   --active-btn-brg: #188ce8;
   --team-btn-portfolio-bgr: #f5f4fa;
+  /* Значення для сітки */
+  --items: 3;
+  --indent: 30px;
 }
 body {
   font-family: var(--main-font);
@@ -128,6 +131,16 @@ gap: 50px;
   color: var(--p-text-color);
   text-decoration: none;
 }
+/* image */
+
+.image,
+.image-team,
+.img-portfolio {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* main */
 
 .list {
@@ -246,7 +259,9 @@ gap: 50px;
   display: flex;
   gap: 30px;
 }
+
 /* team */
+
 .section-team {
   background: var(--team-btn-portfolio-bgr);
 }
@@ -316,7 +331,9 @@ gap: 50px;
 .link {
   color: rgba(255, 255, 255, 0.6);
 }
+
 /* portfolio page */
+
 .container-portfolio {
   display: flex;
 }
@@ -329,13 +346,16 @@ gap: 50px;
   display: flex;  
   gap: 8px;
  
- 
 }
 .box-portfolio .list {
+  /* --items: 4; */
   display: flex; 
   flex-wrap: wrap;
   gap: 30px;
 }
+/* .box-portfolio .list-item {
+  flex-basis: calc((100% - var(--indent)  *  (var(--items) - 1)) / var(--items));
+} */
 .box {
   width: 322px;
   padding-top: 20px;
