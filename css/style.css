@@ -19,9 +19,9 @@
   --team-btn-portfolio-bgr: #f5f4fa;
 
   /*  Border colors */
-  --border-header:#ececec;
-  --border-portfolio: #EEEEEE;
-  
+  --border-header: #ececec;
+  --border-portfolio: #eeeeee;
+
   /* Значення для сітки */
   --items: 3;
   --indent: 30px;
@@ -41,8 +41,8 @@ h4,
 h5,
 h6,
 p {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .container {
   /* outline: 2px solid tomato; */
@@ -54,7 +54,7 @@ padding: 0;
 }
 
 /* header */
-.container-header{
+.container-header {
   display: flex;
   justify-content: center;
 }
@@ -65,13 +65,12 @@ padding: 0;
   padding-bottom: 32px;
 }
 .main-nav {
-display: flex;
-margin-right: auto;
-
+  display: flex;
+  margin-right: auto;
 }
 .site-nav {
-display: flex;
-gap: 50px;
+  display: flex;
+  gap: 50px;
 }
 
 .contact {
@@ -83,13 +82,13 @@ gap: 50px;
 }
 
 .header {
-  background:var(--second-btn-bgr);
+  background: var(--second-btn-bgr);
   border-bottom: 1px solid var(--border-header);
 }
 
 .link-logo {
   display: block;
-  
+
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -119,7 +118,7 @@ gap: 50px;
   text-decoration: none;
 }
 .current {
-  color:var(--logo-text-color)
+  color: var(--logo-text-color);
 }
 .link-page:hover,
 .link-page:focus,
@@ -203,7 +202,7 @@ gap: 50px;
 .button:hover,
 .button:focus,
 .button:active {
-  background:var(--active-btn-brg)
+  background: var(--active-btn-brg);
 }
 /* Переваги */
 .visually-hidden {
@@ -221,7 +220,6 @@ gap: 50px;
 
 .container-benefits .list {
   display: flex;
- 
 }
 .container-benefits .list-item {
   width: 270px;
@@ -245,7 +243,6 @@ gap: 50px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--p-text-color);
-  
 }
 /* work */
 .section-work {
@@ -263,7 +260,6 @@ gap: 50px;
 }
 
 .container-work .list {
-
   display: flex;
   gap: 30px;
 }
@@ -284,8 +280,9 @@ gap: 50px;
 }
 .container-team .list-item {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-  background:var(--main-bgr);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: var(--main-bgr);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .box-team {
@@ -308,13 +305,11 @@ gap: 50px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--p-text-color);
-  
 }
 .image-team {
   background: url(4853.jpg);
   border-radius: 0px;
 }
-
 
 /* footer */
 .footer {
@@ -356,29 +351,27 @@ gap: 50px;
   justify-content: center;
   margin-bottom: 50px;
 }
-.container-button .list{
-  display: flex;  
+.container-button .list {
+  display: flex;
   gap: 8px;
- 
 }
 .box-portfolio .list {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
 .box-portfolio .list-item {
-  flex-basis: calc((100% - var(--indent)  *  (var(--items) - 1)) / var(--items));
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 .box {
-  
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 25px;
   padding-left: 24px;
 
-  background:var(--main-bgr);
+  background: var(--main-bgr);
   border-right: 1px solid var(--border-portfolio);
   border-bottom: 1px solid var(--border-portfolio);
   border-left: 1px solid var(--border-portfolio);
@@ -392,7 +385,6 @@ gap: 50px;
   border-radius: 4px;
   padding: 6px 22px;
 
- 
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
