@@ -290,7 +290,7 @@ p {
   padding-bottom: 30px;
 }
 .box-team .title-name {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .title-name {
   font-weight: 500;
@@ -322,7 +322,7 @@ p {
   margin-bottom: 20px;
 }
 
-.list-item:not(:last-child) {
+.list-address .list-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
