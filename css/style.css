@@ -2,12 +2,14 @@
   /* Fonts */
   --main-font: "Roboto", sans-serif;
   --logo-font: "Raleway", sans-serif;
+
   /* Text colors  */
   --main-text-color: #212121;
   --p-text-color: #757575;
   --black-text-color: #000000;
   --logo-text-color: #2196f3;
   --white-text-color: #ffffff;
+
   /* Background colors */
   --main-bgr: #ffffff;
   --main-title-footer-bgr: #2f303a;
@@ -15,6 +17,11 @@
   --second-btn-bgr: #ffffff;
   --active-btn-brg: #188ce8;
   --team-btn-portfolio-bgr: #f5f4fa;
+
+  /*  Border colors */
+  --border-header:#ececec;
+  --border-portfolio: #EEEEEE;
+  
   /* Значення для сітки */
   --items: 3;
   --indent: 30px;
@@ -77,16 +84,12 @@ gap: 50px;
 
 .header {
   background:var(--second-btn-bgr);
-  border: 1px solid #ececec;
-  width: 1600px;
+  border-bottom: 1px solid var(--border-header);
 }
 
 .link-logo {
   display: block;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-
+  
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -94,6 +97,12 @@ gap: 50px;
   letter-spacing: 0.03em;
   color: var(--logo-text-color);
   text-decoration: none;
+}
+.logo-header {
+  display: inline-block;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo-word {
   color: var(--black-text-color);
@@ -149,19 +158,19 @@ gap: 50px;
   padding: 0;
 }
 .section {
-  width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .section-service {
   background: var(--main-title-footer-bgr);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .title-main {
   width: 696px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 104px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -174,7 +183,6 @@ gap: 50px;
 .button {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 104px;
   padding: 10px 23px;
 
   font-family: inherit;
@@ -217,17 +225,15 @@ gap: 50px;
 }
 .container-benefits .list-item {
   width: 270px;
-  padding-top: 35px;
-  padding-bottom: 10px;
 }
 
 .container-benefits .list-item + .list-item {
   margin-left: 30px;
-  
 }
 
-
 .title-benefits {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -242,6 +248,9 @@ gap: 50px;
   
 }
 /* work */
+.section-work {
+  padding-top: 0;
+}
 .title {
   margin-bottom: 50px;
 
@@ -252,13 +261,15 @@ gap: 50px;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-.image {
-  background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
-  mix-blend-mode: normal;
-}
+
 .container-work .list {
+
   display: flex;
   gap: 30px;
+}
+
+.container-work .list-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
 /* team */
@@ -267,11 +278,13 @@ gap: 50px;
   background: var(--team-btn-portfolio-bgr);
 }
 .container-team .list {
+  --items: 4;
   display: flex;
   gap: 30px;
 }
 .container-team .list-item {
-  background: #FFFFFF;
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  background:var(--main-bgr);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -305,22 +318,19 @@ gap: 50px;
 
 /* footer */
 .footer {
-  width: 1600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: var(--main-title-footer-bgr);
 }
 .logo-footer {
-  padding-top: 60px;
-  padding-bottom: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
-.link-address,
- .mail {
-  padding-bottom: 9px;
+.list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
-.tel {
-  padding-bottom: 60px;
-}
 .link-address,
 .link {
   display: inline-block;
@@ -344,7 +354,7 @@ gap: 50px;
 .container-button {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .container-button .list{
   display: flex;  
@@ -352,23 +362,29 @@ gap: 50px;
  
 }
 .box-portfolio .list {
-  /* --items: 4; */
   display: flex; 
   flex-wrap: wrap;
   gap: 30px;
 }
-/* .box-portfolio .list-item {
+
+.box-portfolio .list-item {
   flex-basis: calc((100% - var(--indent)  *  (var(--items) - 1)) / var(--items));
-} */
+}
+
 .box {
-  width: 322px;
+  
   padding-top: 20px;
-  padding-right: 13px;
-  padding-bottom: 20px;
-  padding-left: 35px;
+  padding-right: 24px;
+  padding-bottom: 25px;
+  padding-left: 24px;
+
+  background:var(--main-bgr);
+  border-right: 1px solid var(--border-portfolio);
+  border-bottom: 1px solid var(--border-portfolio);
+  border-left: 1px solid var(--border-portfolio);
 }
 .box .titel-portfolio {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 .btn-portfolio {
   display: block;
