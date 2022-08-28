@@ -381,7 +381,7 @@ p {
 }
 .btn-portfolio {
   display: block;
-  border-color: transparent;
+  border: none;
   border-radius: 4px;
   padding: 6px 22px;
 
